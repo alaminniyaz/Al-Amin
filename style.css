@@ -2,10 +2,12 @@
     height: 18rem;
 }
 
-.link {
-    text-decoration: none;
+.services .service-item:hover {
+    transform: scale(1.01);
 }
-
+.portfolio .card:hover {
+    transform: scale(1.01);
+}
 .bg-glass {
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
