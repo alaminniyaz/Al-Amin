@@ -2,10 +2,20 @@
     height: 18rem;
 }
 
-.about .social-links {
-    font-size: 20px;
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
 }
 
+
+.home .home-img:hover {
+    transform: scale(1.01);
+}
+.about .about-img:hover {
+    transform: scale(1.01);
+}
 .services .service-item:hover {
     transform: scale(1.01);
 }
