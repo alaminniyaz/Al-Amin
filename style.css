@@ -91,3 +91,15 @@
         height: 15rem;
     }
 }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background:#d1e5ff;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#4bee94, #9ccf1d96);
+    border-radius: 15px;
+}
