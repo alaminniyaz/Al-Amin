@@ -1,15 +1,6 @@
 .card img {
-    height: 18rem;
+    height: 25rem;
 }
-
-
-@media only screen and (max-width: 767px) {
-    .navbar-nav {
-        text-align: center;
-        align-items: center;
-    }
-}
-
 
 .home .home-img:hover {
     transform: scale(1.01);
@@ -85,10 +76,14 @@
 
 
 
-
-@media only screen and (max-width: 768px) {
+/* Responsive */
+@media (max-width: 768px) {
     .card img {
         height: 15rem;
+    }
+    .navbar-nav {
+        text-align: center;
+        align-items: center;
     }
 }
 
