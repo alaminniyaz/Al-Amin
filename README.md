@@ -7,7 +7,7 @@
 
 
 
-## Section 🎯
+## Sections 🎯
 
 - **Home**
 - **About**
