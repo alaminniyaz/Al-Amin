@@ -1,521 +1,724 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Al Amin Portfolio </title>
-    <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <!-- Bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-expand-md bg-light fixed-top shadow-sm rounded-2">
-        <div class="container">
-            <div class="tubelight">
-                <a href="https://ialamin.netlify.app" class="navbar-brand">
-                    <span class="fs-5"> A </span>
-                    <span class="fs-5"> L </span>
-                    <span class="fs-5"> A </span>
-                    <span class="fs-5"> M </span>
-                    <span class="fs-5"> I </span>
-                    <span class="fs-5"> N </span>
-            </a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link ">
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link"> About </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#services" class="nav-link"> Services </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#portfolio" class="nav-link"> Portfolio </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#testimonials" class="nav-link"> Testimonials </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link"> Contact </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Navbar -->
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Home section start -->
-    <section class="home py-5" id="home">
-        <div class="container">
-            <div class="row align-items-center align-content-center">
-                <div class="col-md-6 my-sm-5 my-5 py-sm-5">
-                    <div class="home-img text-center">
-                        <img src="images/home-img.png" class="img-fluid rounded-circle mw-100 shadow p-1">
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="CSS/style.css">
+
+        <title> Al Amin Portfolio </title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="" class="nav__logo">
+                    Al Amin
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="ri-home-5-line"></i> Home
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="ri-trophy-line"></i> Skills     
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#qualifications" class="nav__link">
+                                <i class="ri-book-open-line"></i> Qualifications
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class="ri-briefcase-line"></i> Services
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#projects" class="nav__link">
+                                <i class="ri-image-line"></i> Projects
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="ri-chat-3-line"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Close Button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
                     </div>
                 </div>
-                <div class="col-md-6 mt-sm-5 order-md-first">
-                    <div class="home-text text-center text-md-start">
-                        <p class="text-muted fs-4 mb-2"> Assalamualaikum I'm </p>
-                        <h1 class="text-dark fs-1 fs-bold user-select-all">
-                            <span> A </span>
-                            <span> L </span>
-                            <span> A </span>
-                            <span> M </span>
-                            <span> I </span>
-                            <span> N </span>
+
+                <div class="nav__buttons">
+                    <!-- Theme Change Button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <!-- Toggle Button  -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-4-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid section__border">
+                    <div class="home__data grid">
+                        <h1 class="home__title">
+                            Assalamualaikum <br>
+                             I'm Al Amin <br>
+                            Web Developer 
                         </h1>
-                        <p class="fs-2 mt-2 text-body">
-                            Web Developer & Designer
-                        </p>
-                        <a href="#about" class="btn btn-outline-dark px-3 mt-3 rounded-5 shadow-sm"> More About Me </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Home section end -->
 
-    <!-- about section start -->
-    <section class="about bg-light shadow-sm py-5" id="about">
-        <div class="container py-4">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center">
-                        <h2 class="fw-semibold mb-3 mb-sm-5 text-uppercase user-select-all"> About Me </h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-6">
-                    <div class="about-img">
-                        <img src="images/about-img.jpg" class="img-fluid img-thumbnail mw-100 shadow mb-3">
-                    </div>
-                    <div class="social-links text-center mb-4">
-                        <a href="https://www.facebook.com/ialamin69" target="_blank" class="text-primary me-4 fs-1"> <i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/ialamin69" target="_blank" class="text-danger me-4 fs-1"> <i class="fab fa-instagram"></i></a>
-                        <a href="https://twitter.com/ialamin69" target="_blank" class="text-info me-4 fs-1"> <i class="fab fa-twitter"></i></a>
-                        <a href="https://t.me/ialamin69" target="_blank" class="text-info me-4 fs-1"> <i class="fab fa-telegram"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-6">
-                    <div class="about-text">
-                        <p class="fs-4 mb-4 text-muted"> I'm a Web Developer with years of experience. I'm from Bangladesh. I code and create websites for amazing people around the world. I like work with new people. New people are new experiences. </p>
-
-                        <p class="fs-4 mb-4 text-muted">
-                            I'm a student though but I've learnt HTML, CSS, and Bootstrap. I'm still learning JavaScript and working with Bootstrap framework. In future I'll be a Full Stack Developer.
-                        </p>
-                    </div>
-                    <div class="skill mt-5">
-                        <h2 class="fw-semibold mb-sm-5 mb-4 text-center text-uppercase"> Skills </h2>
-                        <div class="skill-item mb-4">
-                            <h3 class="fs-6"> HTML </h3>
-                            <div class="progress" style="height: 8px">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%"></div>
-                              </div>
-                        </div>
-                        <div class="skill-item mb-4">
-                            <h3 class="fs-6"> CSS </h3>
-                            <div class="progress" style="height: 8px">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%"></div>
-                              </div>
-                        </div>
-                        <div class="skill-item mb-4">
-                            <h3 class="fs-6"> Bootstrap </h3>
-                            <div class="progress" style="height: 8px">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 92%"></div>
-                              </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-        </div>
-    </section>
-    <!-- about section end -->
-
-    <!-- service section start -->
-    <section class="services bg-white py-5" id="services">
-        <div class="container-lg py-4">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center">
-                        <h2 class="fw-semibold mb-sm-5 mb-4 text-uppercase user-select-all">
-                            My services
-                        </h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-6 col-lg-4 mb-sm-5 mb-3">
-                    <div class="service-item shadow-sm p-4 rounded bg-light">
-                        <div class="icon my-3 text-body fs-1">
-                            <i class="bi bi-laptop"></i>
-                        </div>
-                        <h3 class="fs-4 py-2"> Web Development </h3>
-                        <p class="text-muted lead"> Develop top notch, user-friendly, professional website for your business to grow online .The goal is to make your business Stand-Out from your competitors . </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-sm-5 mb-3">
-                    <div class="service-item shadow-sm p-4 rounded bg-light">
-                        <div class="icon my-3 text-body fs-1">
-                            <i class="bi bi-list-check"></i>
-                        </div>
-                        <h3 class="fs-4 py-2"> Digital Marketing </h3>
-                        <p class="text-muted lead"> Do marketing for you on digital platforms eg: Facebook, Instagram, Twitter and anywhere you want. it's help to make your business Stand-Out from your competitors . </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-sm-5 mb-3">
-                    <div class="service-item shadow-sm p-4 rounded bg-light">
-                        <div class="icon my-3 text-body fs-1">
-                            <i class="bi bi-brush"></i>
-                        </div>
-                        <h3 class="fs-4 py-2"> Creative Design </h3>
-                        <p class="text-muted lead"> Design top notch, user-friendly, professional website for your business to scale and grow online .The goal is to make your business Stand-Out from your competitors . </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-sm-5 mb-3">
-                    <div class="service-item shadow-sm p-4 rounded bg-light">
-                        <div class="icon my-3 text-body fs-1">
-                            <i class="bi bi-code-slash"></i>
-                        </div>
-                        <h3 class="fs-4 py-2"> Clean Code </h3>
-                        <p class="text-muted lead"> I can code your website in neat and clean that any developer can understand that. </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-sm-5 mb-3">
-                    <div class="service-item shadow-sm p-4 rounded bg-light">
-                        <div class="icon my-3 text-body fs-1">
-                            <i class="bi bi-megaphone"></i>
-                        </div>
-                        <h3 class="fs-4 py-2"> Presentation </h3>
-                        <p class="text-muted lead"> I am very good on making powerpoint presentation. You will love my presentation.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-sm-5 mb-3">
-                    <div class="service-item shadow-sm p-4 rounded bg-light">
-                        <div class="icon my-3 text-body fs-1">
-                            <i class="bi bi-headset"></i>
-                        </div>
-                        <h3 class="fs-4 py-2"> Great Support </h3>
-                        <p class="text-muted lead"> Support is very important for a client and I always support each of my clients. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- service section end -->
-
-    <!-- portfolio section start -->
-    <section class="portfolio bg-light shadow-sm py-5" id="portfolio">
-        <div class="container-lg py-4">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center">
-                        <h2 class="fw-semibold mb-sm-4 mb-3 text-uppercase user-select-all">
-                            Latest Works
-                        </h2>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="row">
-                
-                <!-- item 1 -->
-                <div class="col-12 col-lg-6 col-md-6 mt-3">
-                    <div class="card shadow">
-                        <img src="images/portfolio/e-school.jpg" class="card-img-top img-thumbnail">
-                        <div class="card-body">
-                          <h5 class="card-title"> E-School </h5>
-                          <a href="https://ialamin69.github.io/E-School" target="_blank" class="stretched-link btn btn-outline-secondary mt-2"> Live Preview </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- item 1 -->
-
-                <!-- item 2 -->
-                <div class="col-12 col-lg-6 col-md-6 mt-3">
-                    <div class="card shadow">
-                        <img src="images/portfolio/art-life.jpg" class="card-img-top img-thumbnail">
-                        <div class="card-body">
-                          <h5 class="card-title"> Art Life </h5>
-                          <a href="https://art-life.netlify.app" target="_blank" class="stretched-link btn btn-outline-secondary mt-2"> Live Preview </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- item 2 -->
-
-                <!-- item 3 -->
-                <div class="col-12 col-lg-6 col-md-6 mt-3">
-                    <div class="card shadow">
-                        <img src="images/portfolio/netflix.jpg" class="card-img-top img-thumbnail">
-                        <div class="card-body">
-                          <h5 class="card-title"> Netflix </h5>
-                          <a href="https://netflixbd.netlify.app" target="_blank" class="stretched-link btn btn-outline-secondary mt-2"> Live Preview </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- item 3 -->
-
-                <!-- item 4 -->
-                <div class="col-12 col-lg-6 col-md-6 mt-3">
-                    <div class="card shadow">
-                        <img src="images/portfolio/computer.jpg" class="card-img-top img-thumbnail">
-                        <div class="card-body">
-                          <h5 class="card-title"> Computer </h5>
-                          <a href="https://ialamin69.github.io/Computer" target="_blank" class="stretched-link btn btn-outline-secondary mt-2"> Live Preview </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- item 4 -->
-
-                <!-- item 5 -->
-                <div class="col-12 col-lg-6 col-md-6 mt-3">
-                    <div class="card shadow">
-                        <img src="images/portfolio/calculator.jpg" class="card-img-top img-thumbnail">
-                        <div class="card-body">
-                          <h5 class="card-title"> Calculator </h5>
-                          <a href="https://bd-calculator.netlify.app" target="_blank" class="stretched-link btn btn-outline-secondary mt-2"> Live Preview </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- item 5 -->
-
-                <!-- item 6 -->
-                <div class="col-12 col-lg-6 col-md-6 mt-3">
-                    <div class="card shadow">
-                        <img src="images/portfolio/urban-fashion.jpg" class="card-img-top img-thumbnail">
-                        <div class="card-body">
-                          <h5 class="card-title"> Urban Fashion </h5>
-                          <a href="https://ialamin69.github.io/urbanfashion" target="_blank" class="stretched-link btn btn-outline-secondary mt-2"> Live Preview </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- item 6 -->
-
-            </div>
-        </div>
-    </section>
-    <!-- portfolio section end -->
-
-    <!-- freelencer available section start -->
-    <div class="freelencer-available py-5 bg-secondary">
-        <div class="container-lg py-4">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <p class="text-light fs-5"> Do you have any Project? </p>
-                    <h2 class="fs-1 text-white mb-4"> I'm Available For Freelencer Projects </h2>
-                    <a href="#contact" class="btn btn-outline-light"> Hire Me </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- freelencer available section end -->
-
-    <!-- testimonial section start-->
-    <section class="testimonials bg-light shadow-sm py-5" id="testimonials">
-        <div class="container-lg py-4">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center">
-                        <h2 class="fw-semibold mb-sm-4 mb-3 text-uppercase user-select-all"> Testimonials </h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8 col-md-8 col-xl-7">
-                    <div class="carousel slide" id="carousel">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active bg-dark"></button>
-                          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" class="bg-dark"></button>
-                          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" class="bg-dark"></button>
-                        </div>
-                        <div class="carousel-inner p-1">
-                            <!-- testi item start -->
-                        <div class="carousel-item active testi-item bg-light shadow-sm rounded p-4 mb-5">
-                            <div class="testi-author-info d-flex align-items-center">
-                                <img src="images/testimonial/1.jpg" class="img-thumbnail rounded-circle" alt="author image">
-                                <div class="author ms-3">
-                                    <h3 class="fs-6 mb-1"> Stephen </h3>
-                                    <p class="text-muted m-0"> SEO Manager </p>
-                                </div>
+                        <div class="home__blog grid">
+                            <div class="home__profile">
+                                <img src="img/profile.png" alt="profile">
                             </div>
-                            <p class="text-muted mt-3 lead"> I can't thank you enough for all your wonderful skills support and patience . you will be Always in our list. </p>
-                            <div class="rating text-warning">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
+
+                            <img src="img/shape-wawes.svg" alt="" class="home__shape-wawes"> 
+                            <img src="img/shape-circle.svg" alt="" class="home__shape-circle"> 
                         </div>
-                        <!-- testi item end -->
                         
-                        <!-- testi item start -->
-                        <div class="carousel-item testi-item bg-light shadow-sm rounded p-4 mb-5">
-                            <div class="testi-author-info d-flex align-items-center">
-                                <img src="images/testimonial/2.jpg" class="img-thumbnail rounded-circle" alt="author image">
-                                <div class="author ms-3">
-                                    <h3 class="fs-6 mb-1"> Chloe </h3>
-                                    <p class="text-muted m-0"> SEO Manager </p>
-                                </div>
-                            </div>
-                            <p class="text-muted mt-3 lead"> It's always a pleasure to work with you. you are personable, user-friendly responsive, and results-oriented! </p>
-                            <div class="rating text-warning">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <!-- testi item end -->
-    
-                        <!-- testi item start -->
-                        <div class="carousel-item testi-item bg-light shadow-sm rounded p-4 mb-5">
-                            <div class="testi-author-info d-flex align-items-center">
-                                <img src="images/testimonial/3.jpg" class="img-thumbnail rounded-circle" alt="author image">
-                                <div class="author ms-3">
-                                    <h3 class="fs-6 mb-1"> Peter </h3>
-                                    <p class="text-muted m-0"> SEO Manager </p>
-                                </div>
-                            </div>
-                            <p class="text-muted mt-3 lead"> Huge knowledgeable about the services you provide. Definately recomended. i'd like to work again. </p>
-                            <div class="rating text-warning">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <!-- testi item end -->
-                    </div> 
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- testimonial section end -->
+                        <ul class="home__social">
+                            <a href="https://www.twitter.com/alaminniyaz" target="_blank" class="home__social-link">
+                                <i class="ri-twitter-line"></i>  
+                            </a>
 
-    <!-- contact section start -->
-    <section class="contact bg-light shadow-sm py-5" id="contact">
-        <div class="container-lg py-4">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center">
-                        <h2 class="fw-semibold mb-sm-5 mb-4 text-uppercase user-select-all"> Contact Me </h2>
+                            <a href="https://t.me/alaminniyaz" target="_blank" class="home__social-link">
+                                <i class="ri-telegram-line"></i> 
+                            </a>
+
+                            <a href="https://github.com/alaminniyaz" target="_blank" class="home__social-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com/alaminniyaz" target="_blank" class="home__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+
+                            <a href="https://www.facebook.com/alaminniyazz" target="_blank" class="home__social-link">
+                                <i class="ri-facebook-circle-line"></i>
+                            </a>
+                        </ul>
                     </div>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="col-md-5 mt-2 mt-sm-3">
-                    <div class="contact-item d-flex mb-3">
-                        <div class="icon fs-3 text-muted">
-                            <i class="fas fa-user"></i>
+                    <!--==================== HOME INFO 1 ====================-->
+                    <div class="home__info">
+                        <div>
+                            <h3 class="home__info-title">
+                                ABOUT ME
+                            </h3>
+
+                            <p class="home__info-description">
+                                Hi, I'm Al Amin, Frontend Developer.
+                                I like building beautiful websites and bringing creative designs to life.
+                            </p>
                         </div>
-                        <div class="text ms-3">
-                            <h3 class="fs-5"> Name </h3>
-                            <p class="text-muted m-0"> Al Amin </p>
+                        <div>
+                            <h3 class="home__info-title">
+                                CONTACT
+                            </h3>
+
+                            <p class="home__info-description">
+                                Chandpur, Bangladesh <br>
+                                Mohammadalamin4576@gmail.com <br>
+                                +880 1521713951
+                            </p>
                         </div>
                     </div>
 
-                    <div class="contact-item d-flex mb-3">
-                        <div class="icon fs-4 text-muted">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="text ms-3">
-                            <h3 class="fs-5"> Email </h3>
-                            <p class="text-muted m-0"> mohammadalamin4576@gmail.com </p>
-                        </div>
-                    </div>
+                    <!--==================== HOME INFO 1 ====================-->
+                    <div class="home__info">
+                        <div>
+                            <h3 class="home__info-title">
+                                YEARS OF EXPERIENCE
+                            </h3>
 
-                    <div class="contact-item d-flex mb-3">
-                        <div class="icon fs-4 text-muted">
-                            <i class="fas fa-phone"></i>
+                            <p class="home__info-number">
+                                01+
+                            </p>
                         </div>
-                        <div class="text ms-3">
-                            <h3 class="fs-5"> Phone </h3>
-                            <p class="text-muted m-0"> 01866-742078 </p>
-                        </div>
-                    </div>
 
-                    <div class="contact-item d-flex mb-3">
-                        <div class="icon fs-2 text-muted">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="text ms-3">
-                            <h3 class="fs-5"> Address </h3>
-                            <p class="text-muted m-0"> Chandpur, Bangladesh </p>
+                        <div>
+                            <h3 class="home__info-title">
+                                COMPLETED PROJECTS
+                            </h3>
+
+                            <p class="home__info-number">
+                                12+
+                            </p>
                         </div>
                     </div>
                 </div>
+            </section>
 
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title"> Skills </h2>
+                <span class="section__subtitle"> What I Can </span>
 
-                <!-- contact form start -->
-                <div class="col-md-7 mt-4 mt-sm-0">
-                    <div class="contact-form">
-                        <form action="https://formspree.io/f/moqzazwz" method="post">
-                            <div class="row">
-                                <div class="form-floating col-lg-6 mb-4">
-                                    <input type="text" name="Name" placeholder="Your Name" required class="form-control form-control-lg fs-6 border-0 shadow-sm">
-                                    <label for="Name" class="px-4 text-muted"> Your Name </label>
+                <div class="skills__container container grid section__border">
+                    <!--==================== SKILLS 1 ====================-->
+                    <div class="skills__content">
+                        <h3 class="skills__title">
+                            <i class="ri-braces-line"></i> Web Development
+                        </h3>
+
+                        <div class="skills__info">
+                            <div class="skills__data">
+                                <div class="skills__blog">
+                                    <img src="img/html-1.svg" alt="skills image">     
                                 </div>
-                                <div class="form-floating col-lg-6 mb-4">
-                                    <input type="email" name="Email" placeholder="Your Email" required class="form-control form-control-lg fs-6 border-0 shadow-sm">
-                                    <label for="Email" class="px-4 text-muted"> Your Email </label>
+
+                                <h3 class="skills__name"> HTML </h3>
+                                <span class="skills__subtitle"> Advanced </span>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__blog">
+                                    <img src="img/css-3.svg" alt="skills image">     
+                                </div>
+
+                                <h3 class="skills__name"> CSS </h3>
+                                <span class="skills__subtitle"> Advanced </span>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__blog">
+                                    <img src="img/logo-javascript.svg" alt="skills image">     
+                                </div>
+
+                                <h3 class="skills__name"> Javascript </h3>
+                                <span class="skills__subtitle"> Intermediate </span>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__blog">
+                                    <img src="img/bootstrap-5-1.svg" alt="skills image">     
+                                </div>
+
+                                <h3 class="skills__name"> Bootstrap </h3>
+                                <span class="skills__subtitle"> Advanced </span>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__blog">
+                                    <img src="img/git-icon.svg" alt="skills image">     
+                                </div>
+
+                                <h3 class="skills__name"> Git </h3>
+                                <span class="skills__subtitle"> Intermediate </span>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__blog">
+                                    <img src="img/github-icon-1.svg" alt="skills image">     
+                                </div>
+
+                                <h3 class="skills__name"> Github </h3>
+                                <span class="skills__subtitle"> Intermediate </span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--==================== SKILLS 2 ====================-->
+                    
+                    <div class="skills__content">
+                        <h3 class="skills__title">
+                            <i class="ri-brush-line"></i> Web Designing
+                        </h3>
+
+                        <div class="skills__info">
+                           <div class="skills__data">
+                                <div class="skills__blog">
+                                    <img src="img/figma-1.svg" alt="skills image">     
+                                </div>
+
+                                <h3 class="skills__name"> Figma </h3>
+                                <span class="skills__subtitle"> Advanced </span>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__blog">
+                                    <img src="img/adobe-photoshop-2.svg" alt="skills image">     
+                                </div>
+
+                                <h3 class="skills__name"> Photoshop </h3>
+                                <span class="skills__subtitle"> Intermediate </span>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__blog">
+                                    <img src="img/canva-1.svg" alt="skills image">     
+                                </div>
+
+                                <h3 class="skills__name"> Canva </h3>
+                                <span class="skills__subtitle"> Advanced </span>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__blog">
+                                    <img src="img/sketch-2.svg" alt="skills image">     
+                                </div>
+
+                                <h3 class="skills__name"> Sketch </h3>
+                                <span class="skills__subtitle"> Basic </span>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__blog">
+                                    <img src="img/adobe-xd-1.svg" alt="skills image">     
+                                </div>
+
+                                <h3 class="skills__name"> Adobe XD </h3>
+                                <span class="skills__subtitle"> Intermediate </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section" id="qualifications">
+                <h2 class="section__title"> Qualifications </h2>
+                <span class="section__subtitle"> Knowledge & Experience </span>
+
+                <div class="qualification__container container grid section__border">
+                    <!--==================== QUALIFICATION 1 ====================-->
+                    <div class="qualification__content">
+                        <h3 class="qualification__title"> 
+                            <i class="ri-draft-line"></i> Education
+                        </h3>
+
+                        <div class="qualification__info">
+                            <div>
+                                <h3 class="qualification__name"> Master In HTML and CSS
+                                </h3>
+                                <span class="qualification__institude"> Hablu Programmer - Online </span>
+                                <span class="qualification__year"> 2022 - 2022 </span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__name"> Javascript
+                                </h3>
+                                <span class="qualification__institude"> Anisul Islam & Stack Learner </span>
+                                <span class="qualification__year"> 2022 - present </span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__name"> Full Stack Developer
+                                </h3>
+                                <span class="qualification__institude"> Programmer Hero Community </span>
+                                <span class="qualification__year"> Present </span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--==================== QUALIFICATION 2 ====================-->
+                    <div class="qualification__content">
+                        <h3 class="qualification__title"> 
+                            <i class="ri-draft-line"></i> Work
+                        </h3>
+
+                        <div class="qualification__info">
+                            <div>
+                                <h3 class="qualification__name"> Frontend Mentor
+                                </h3>
+                                <span class="qualification__institude"> Projects - Online </span>
+                                <span class="qualification__year"> 2022 </span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__name"> E-Commerce Projects
+                                </h3>
+                                <span class="qualification__institude"> Projects - Online </span>
+                                <span class="qualification__year"> 2022 </span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__name"> Web Projects
+                                </h3>
+                                <span class="qualification__institude"> Projects - Online </span>
+                                <span class="qualification__year"> Present </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <img src="img/shape-circle.svg" class="qualification__img">
+            </section>
+
+            <!--==================== SERVICES ====================-->
+            <section class="services section" id="services">
+                <h2 class="section__title"> Services </h2>
+                <span class="section__subtitle"> What I Provide </span>
+
+                <div class="services__container container grid section__border">
+                    <div class="services__card">
+                        <i class="ri-code-s-slash-line"></i>
+
+                        <h2 class="services__title">
+                            Web <br> Development
+                        </h2>
+
+                        <p class="services__description">
+                            Develop top notch, user-friendly, professional website for your business to grow online .The goal is to make your business Stand-Out from your competitors .
+                        </p>
+
+                        <div class="services__border"></div>
+                    </div>
+
+                    <div class="services__card">
+                        <i class="ri-flag-2-line"></i>
+
+                        <h2 class="services__title">
+                            Digital <br> Marketing
+                        </h2>
+
+                        <p class="services__description">
+                            Do marketing for you on digital platforms eg: Facebook, Instagram, Twitter and anywhere you want. it's help to make your business Stand-Out from your competitors .
+                        </p>
+
+                        <div class="services__border"></div>
+                    </div>
+
+                    <div class="services__card">
+                        <i class="ri-quill-pen-line"></i>
+
+                        <h2 class="services__title">
+                            Creative <br> Design
+                        </h2>
+
+                        <p class="services__description">
+                            Design top notch, user-friendly, professional website for your business to scale and grow online .The goal is to make your business Stand-Out from your competitors .
+                        </p>
+
+                        <div class="services__border"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PROJECTS ====================-->
+            <section class="projects section" id="projects">
+                <h2 class="section__title"> Projects </h2>
+                <span class="section__subtitle"> Recent Works </span>
+
+                <div class="container section__border">
+                    <div class="projects__container swiper">
+                        <div class="swiper-wrapper">
+                            <!--======== PROJECTS 1 ========-->
+                            <div class="projects__content swiper-slide">
+                                <img src="img/Tech Shop.jpg" alt="Project image" class="projects__img">
+
+                                <div>
+                                    <span class="projects__subtitle"> Web </span>
+                                    <h1 class="projects__title"> Tech Shop </h1>
+
+                                    <a href="https://techshop-bd.netlify.app" target="_blank" class="projects__button">
+                                        Live Preview <i class="ri-arrow-right-line"></i>      
+                                    </a>
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="form-floating col-lg-12 mb-4">
-                                    <textarea name="Message" placeholder="Your Message" required class="form-control form-control-lg fs-6 border-0 shadow-sm" style="height: 180px;"></textarea>
-                                    <label for="Message" class="px-4 text-muted"> Your Message </label>
+                            <!--======== PROJECTS 2 ========-->
+                            <div class="projects__content swiper-slide">
+                                <img src="img/E School.jpg" alt="Project image" class="projects__img">
+
+                                <div>
+                                    <span class="projects__subtitle"> Web </span>
+                                    <h1 class="projects__title"> E School </h1>
+
+                                    <a href="https://school-bd.netlify.app" target="_blank" class="projects__button">
+                                        Live Preview <i class="ri-arrow-right-line"></i>      
+                                    </a>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <button type="submit" class="btn btn-outline-dark px-3 mb-3 rounded-5"> Send Message </button>
+
+                            <!--======== PROJECTS 3 ========-->
+                            <div class="projects__content swiper-slide">
+                                <img src="img/Hair Studio.jpg" alt="Project image" class="projects__img">
+
+                                <div>
+                                    <span class="projects__subtitle"> Web </span>
+                                    <h1 class="projects__title"> Hair Studio </h1>
+
+                                    <a href="https://hair-studio-bd.netlify.app" target="_blank" class="projects__button">
+                                        Live Preview <i class="ri-arrow-right-line"></i>      
+                                    </a>
                                 </div>
                             </div>
+
+                            <!--======== PROJECTS 4 ========-->
+                            <div class="projects__content swiper-slide">
+                                <img src="img/netflix.jpg" alt="Project image" class="projects__img">
+
+                                <div>
+                                    <span class="projects__subtitle"> Web </span>
+                                    <h1 class="projects__title"> Netflix Clone </h1>
+
+                                    <a href="https://netflixbd.netlify.app" target="_blank" class="projects__button">
+                                        Live Preview <i class="ri-arrow-right-line"></i>      
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--======== PROJECTS 5 ========-->
+                            <div class="projects__content swiper-slide">
+                                <img src="img/computer.jpg" alt="Project image" class="projects__img">
+
+                                <div>
+                                    <span class="projects__subtitle"> Web </span>
+                                    <h1 class="projects__title"> IT Center </h1>
+
+                                    <a href="https://computer-pc.netlify.app" target="_blank" class="projects__button">
+                                        Live Preview <i class="ri-arrow-right-line"></i>      
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--======== PROJECTS 6 ========-->
+                            <div class="projects__content swiper-slide">
+                                <img src="img/art life.jpg" alt="Project image" class="projects__img">
+
+                                <div>
+                                    <span class="projects__subtitle"> Beautiful Website for an Architecture Company </span>
+                                    <h1 class="projects__title"> ART-LIFE Website </h1>
+
+                                    <a href="https://art-life.netlify.app" target="_blank" class="projects__button">
+                                        Live Preview <i class="ri-arrow-right-line"></i>      
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Swiper Arrows -->
+                        <div class="swiper-button-next">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                        <div class="swiper-button-prev">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+
+                        <!-- Swiper Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== TESTIMONIAL ====================-->
+            
+            <section class="testimonial section">
+                <h2 class="section__title"> Testimonials </h2>
+                <span class="section__subtitle"> Client Say </span>
+
+                <div class="container section__border">
+                    <div class="testimonial__container swiper">
+                        <div class="swiper-wrapper">
+                         <!--======== TESTIMONIAL 1 ========-->
+                         <div class="testimonial__content swiper-slide">
+                            <p class="testimonial__description">
+                                “Working with Al Amin is to give a good 
+                                impression, I carry out my project at a good 
+                                cost, with excellent quality and attention. 
+                                Great service and highly recommended.”
+                            </p>
+
+                            <div>
+                                <h3 class="testimonial__name"> Esra Bilgic </h3>
+                                <span class="testimonial__subtitle"> Client </span>
+                            </div>
+                         </div>
+
+                         <!--======== TESTIMONIAL 2 ========-->
+                         <div class="testimonial__content swiper-slide">
+                            <p class="testimonial__description">
+                                “It's always a pleasure to work with you. 
+                                you are personable, user-friendly and results-oriented. 
+                                I can't thank you enough for all your wonderful skills support and patience”
+                            </p>
+
+                            <div>
+                                <h3 class="testimonial__name"> Gulsim Ali </h3>
+                                <span class="testimonial__subtitle"> Client </span>
+                            </div>
+                         </div>
+
+                         <!--======== TESTIMONIAL 3 ========-->
+                         <div class="testimonial__content swiper-slide">
+                            <p class="testimonial__description">
+                                “I always wonder after seeing his work. 
+                                How could a man make a project too special! 
+                                Huge Friendly and serious about his work. 
+                                I am Really Satisfied with his work. Highly Recommended for Everyone.”
+                            </p>
+
+                            <div>
+                                <h3 class="testimonial__name"> Mahira Khan </h3>
+                                <span class="testimonial__subtitle"> Client </span>
+                            </div>
+                         </div>
+
+                        </div>
+
+                        <!-- Swiper Arrows -->
+                        <div class="swiper-button-next">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                        <div class="swiper-button-prev">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+
+                    </div>
+                </div>
+
+                <img src="img/shape-wawes.svg" alt="Testimonial image" class="testimonial__img">
+            </section>
+            
+            <!--==================== CONTACT ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title"> Contact </h2>
+                <span class="section__subtitle"> Get in Touch </span>
+
+                <div class="contact__container container grid section__border">
+                    <div class="contact__content">
+                        <h3 class="contact__title">
+                            <i class="ri-chat-3-line"></i> Talk to me
+                        </h3>
+
+                        <div class="contact__info">
+                            <div class="contact__data">
+                                <span class="contact__data-title"> <i class="ri-mail-line"></i> Email </span>
+                                <span class="contact__data-info"> Mohammadalamin4576@gmail.com </span>
+                            </div>
+
+                            <div class="contact__data">
+                                <span class="contact__data-title"> <i class="ri-whatsapp-line"></i> WhatsApp </span>
+                                <span class="contact__data-info"> 01926227220 </span>
+                            </div>
+
+                            <div class="contact__data">
+                                <span class="contact__data-title"> <i class="ri-twitter-line"></i> Twitter </span>
+                                <span class="contact__data-info"> @alaminniyaz </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <h3 class="contact__title">
+                            <i class="ri-send-plane-line"></i> Contact with me via Mail 
+                        </h3>
+
+                        <form action="" class="contact__form" id="contact-form">
+                            <div class="contact__form-div">
+                                <label class="contact__form-tag"> Name </label>
+                                <input type="text" name="Name" placeholder="Write Your Name" required class="contact__form-input" id="contact-name">
+                            </div>
+
+                            <div class="contact__form-div">
+                                <label class="contact__form-tag"> Email </label>
+                                <input type="email" name="Email" placeholder="Write Your Email" required class="contact__form-input" id="contact-email">
+                            </div>
+
+                            <div class="contact__form-div contact__form-area">
+                                <label class="contact__form-tag"> Project </label>
+                                <textarea name="project" class="contact__form-input" id="contact-project" placeholder="Write Your project"></textarea>
+                            </div>
+
+                            <p class="contact__message" id="contact-message"> </p>
+
+                            <button type="submit" class="contact__button"> Submit <i class="ri-mail-send-line"></i> </button>
                         </form>
                     </div>
                 </div>
-                <!-- contact form end -->
-            </div>
-        </div>
-    </section>
-    <!-- contact section end -->
+            </section>
+        </main>
 
-    <!-- footer section start -->
-    <footer class="footer bg-glass border-top py-sm-4 py-3">
-        <div class="container-lg">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="m-0 text-center text-muted"> Designed & Development by <span class="fw-semibold"> <a href="https://ialamin.bio.link" target="_blank" class="link-dark text-decoration-none"> Al Amin </a> </span> <br> All rights reserved © 2023 </p>
-                </div>
-                <div class="col-lg-12">
-                    <a href="#home" class="position-fixed bottom-0 end-0 me-3 mt-3 mb-2 text-muted fs-1">
-                        <i class="bi bi-arrow-up-circle-fill"></i>
-                      </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- footer section end -->
-</body>
-<script src="https://kit.fontawesome.com/0c9e873eb6.js" crossorigin="anonymous"></script>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+             <div class="footer__container container">
+                <h1 class="footer__title"> Al Amin </h1>
+                <p> Web Developer </p>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#home" class="footer__link"> Home </a>
+                    </li>
+
+                    <li>
+                        <a href="#skills" class="footer__link"> Skills </a>
+                    </li>
+                    <li>
+
+                        <a href="#projects" class="footer__link"> Projects </a>
+                    </li>
+                </ul>
+
+                <ul class="footer__social">
+                    <a href="https://twitter.com/alaminniyaz" target="_blank" class="footer__social-link">
+                        <i class="ri-twitter-line"></i>
+                    </a>
+
+                    <a href="https://t.me/alaminniyaz" target="_blank" class="footer__social-link">
+                        <i class="ri-telegram-line"></i>
+                    </a>
+
+                    <a href="https://github.com/alaminniyaz" target="_blank" class="footer__social-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </ul>
+
+                <span class="footer__copy">
+                    Designed & Development by Al Amin <br> All rights reserved © 2023
+                </span>
+             </div>
+        </footer>
+
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#home" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="JS/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="JS/swiper-bundle.min.js"></script>
+        
+        <!--=============== EMAIL JS ===============-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="JS/main.js"></script>
+    </body>
 </html>
