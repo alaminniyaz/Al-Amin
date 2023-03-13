@@ -33,7 +33,7 @@ This is the official portfolio website of me where you can know about me and my 
 
 <!-- Screenshots -->
 
-### :camera: Screenshots
+## :camera: Screenshots
 
 ![me](https://user-images.githubusercontent.com/104723233/224712526-aa7d1877-549c-4ccb-ab55-552037302e46.jpg)
 
@@ -41,7 +41,7 @@ This is the official portfolio website of me where you can know about me and my 
 
 <!-- Features -->
 
-### :dart: Features
+## :dart: Features
 
 - **Responsive Personal Portfolio Website Design Using HTML CSS & JavaScript**
 - **Includes a light and dark theme.**
