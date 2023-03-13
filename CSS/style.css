@@ -638,7 +638,7 @@ body.dark-theme {
   content: '';
 }
 
-.projects__container .swiper-button-prev ,
+.projects__container .swiper-button-prev,
 .projects__container .swiper-button-next {
   width: initial;
   height: initial;
@@ -659,7 +659,7 @@ body.dark-theme {
 .projects__container .swiper-slide {
   margin-bottom: 4.5rem;
 }
-.projects__container .swiper-pagination-bullets {
+.projects__container .swiper-pagination-bullet {
   bottom: 0;
 }
 .projects__container .swiper-pagination-bullet {
@@ -671,7 +671,7 @@ body.dark-theme {
 }
 
 /*=============== TESTIMONIAL ===============*/
-.testimonial{
+.testimonial {
   position: relative;
 }
 
