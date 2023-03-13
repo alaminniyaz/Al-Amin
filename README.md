@@ -60,7 +60,7 @@ This is the official portfolio website of me where you can know about me and my 
 - **Javascript**
 
 
-## Links 🔗
+## Connect with me 🔗
 
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ialamin.netlify.app)
 
