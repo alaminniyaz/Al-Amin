@@ -976,6 +976,14 @@ body.dark-theme {
   .container {
     margin-inline: 1rem;
   }
+  .home__container {
+    justify-content: center;
+  }
+  .home__info {
+    justify-content: left;
+    justify-self: start;
+    margin-left: 4rem;
+  }
   .nav__menu {
     padding-bottom: 4rem;
   }
