@@ -602,6 +602,10 @@ body.dark-theme {
   width: 250px;
   border-radius: .75rem;
   margin-bottom: 1.25rem;
+  transition: .3s;
+}
+.projects__img:hover {
+  transform: scaleX(1.1);
 }
 
 .projects__subtitle {
