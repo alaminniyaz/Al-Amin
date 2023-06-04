@@ -156,35 +156,53 @@ window.addEventListener('scroll', scrollUp)
 
 
 
-/*=============== DARK LIGHT THEME ===============*/ 
-const themeButton = document.getElementById('theme-button')
-const darkTheme = 'dark-theme'
-const iconTheme = 'ri-sun-line'
+/*=============== DARK LIGHT THEME ===============*/
+const themeButton = document.getElementById('theme-button');
+const darkTheme = 'dark-theme';
+const iconTheme = 'ri-sun-line';
 
-//Previously selected topic (if user selected)
-const selectedTheme = localStorage.getItem('selected-theme')
-const selectedIcon = localStorage.getItem('selected-icon')
+// Image element
+const iconImage = document.getElementById('icon-image');
 
-// we obtain the current theme that the interface has by validating the dark-theme class 
-const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line'
+// Function to update the image source based on the theme
+const updateImageSource = () => {
+  const currentTheme = getCurrentTheme();
+  if (currentTheme === 'dark') {
+    iconImage.src = 'img/github-white.svg';
+  } else {
+    iconImage.src = 'img/github-dark.svg';
+  }
+};
 
-// we validate if the user previously choose a topic 
+// Previously selected theme (if user selected)
+const selectedTheme = localStorage.getItem('selected-theme');
+const selectedIcon = localStorage.getItem('selected-icon');
+
+// Obtain the current theme and icon that the interface has
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line';
+
+// Validate if the user previously selected a theme
 if (selectedTheme) {
-  // if the validation is fulfiled, we ask what the issue was to know if we activated or deactivated the dark 
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
+  // Set the theme and icon based on the user's previous selection
+  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
+  themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme);
+  updateImageSource();
 }
 
-// activate / deactivate the theme manually with the button
+// Activate/deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
-  document.body.classList.toggle(darkTheme)
-  themeButton.classList.toggle(iconTheme)
+  document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
+  updateImageSource();
 
-  // we save the theme and the current icon that the user choose
-  localStorage.setItem('selected-theme', getCurrentTheme())
-  localStorage.setItem('selected-icon', getCurrentIcon())
-})
+  // Save the theme and the current icon that the user choose
+  localStorage.setItem('selected-theme', getCurrentTheme());
+  localStorage.setItem('selected-icon', getCurrentIcon());
+});
+
+
+
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 const scrollHeader = () => {
   const header = document.getElementById('header')
